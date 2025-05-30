@@ -16,4 +16,4 @@ docker-compose -f docker.build.yml build &&  docker push ghoulouis/test-rofl:lat
 oasis r build --output test.orc --update-manifest  && oasis r update 
 
 # step 3
-git add . && git commit -m "update omnifarming.orc" && git push 
+git add . && git commit -m "update test.orc" && git push 
