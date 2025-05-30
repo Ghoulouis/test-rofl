@@ -1,12 +1,7 @@
-name: test-rofl
 services:
     test-rofl:
         build:
             context: .
             dockerfile: Dockerfile
-        container_name: test-rofl
         platform: linux/amd64
-        environment:
-            - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
-            - TELEGRAM_GROUP_ID=${TELEGRAM_GROUP_ID}
         image: ghoulouis/test-rofl
