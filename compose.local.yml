@@ -1,7 +1,7 @@
 services:
     test-rofl:
         image: "docker.io/ghoulouis/test-rofl:latest"
-        container_name: test-rofl
+        platform: linux/amd64
         environment:
             - IN_ROFL=TRUE
             - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
