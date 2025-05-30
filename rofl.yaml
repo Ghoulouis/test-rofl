@@ -37,3 +37,8 @@ deployments:
         - any: {}
       fees: endorsing_node
       max_expiration: 3
+    secrets:
+      - name: TELEGRAM_BOT_TOKEN
+        value: pGJwa1gg6d39VbQtT12Vm1WOWD69xvaEKMbrNuUSFJksVtINey5kbmFtZVgiiJ/5l4ylLX5btId1WFvwX58TMLo+/GUnF3yJdNTFq5K8O2Vub25jZU93xRhBKdtqHtoiDVeAp4BldmFsdWVYPiJzhz32+NZi3et2EvQeRHOJiIcsUTsyz9akZic86y3ombL9WPHIL+M/Q2R7DchAyVbAWANHipm2y8LOxPqg
+      - name: TELEGRAM_GROUP_ID
+        value: pGJwa1gg0RUiTl46h/40cn/HoggjADAwd2d423jOh1eomXx5zi9kbmFtZVghYMX79C/n6dpZxgRXo5eoJvKM+bulkbzD/LEyoIHXUts0ZW5vbmNlTz7rCfTw3burtxTK51R7AGV2YWx1ZVgbz2gc9++yWfTB4D58zJsuqg6/UJcxJrVHWSNa
