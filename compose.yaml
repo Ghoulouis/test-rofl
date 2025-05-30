@@ -1,5 +1,5 @@
 services:
-    server:
+    test-rofl:
         image: "docker.io/ghoulouis/test-rofl:latest"
         platform: linux/amd64
         environment:
