@@ -7,7 +7,7 @@ resources:
   cpus: 1
   storage:
     kind: disk-persistent
-    size: 5000
+    size: 4096
 artifacts:
   firmware: https://github.com/oasisprotocol/oasis-boot/releases/download/v0.4.1/ovmf.tdx.fd#db47100a7d6a0c1f6983be224137c3f8d7cb09b63bb1c7a5ee7829d8e994a42f
   kernel: https://github.com/oasisprotocol/oasis-boot/releases/download/v0.4.1/stage1.bin#06e12cba9b2423b4dd5916f4d84bf9c043f30041ab03aa74006f46ef9c129d22
@@ -17,34 +17,34 @@ artifacts:
     compose: compose.yaml
 deployments:
   default:
-    app_id: rofl1qrtxvqhgx5sk3l9qvwt0ddtg3708m3ah0uevlzpx
+    app_id: rofl1qrfvqcmdc9fr777umh6cumf6k9px8ya65quq7sgu
     network: testnet
     paratime: sapphire
     admin: dev
-    oci_repository: rofl.sh/2c527c0b-8ad7-4f15-9f96-44fa81bc63f5:1748860177
+    oci_repository: rofl.sh/13d82bd4-b7c4-4a73-889b-fa9ec59ef135:1748867480
     trust_root:
-      height: 26823885
-      hash: d7b89572db16c0ba47f51bb1fa08caa0132e37f20015bef44a81f6c5c71456a0
+      height: 26875216
+      hash: c103158d93bf9c4f095060f50d38b36294ed9233a6b8ea04cb15c27ed702b3fe
     policy:
       quotes:
         pcs:
           tcb_validity_period: 30
-          min_tcb_evaluation_data_number: 17
+          min_tcb_evaluation_data_number: 18
           tdx: {}
       enclaves:
-        - id: 4Q9GsFXLXZrkYSL3BjLvPpMIgdN/Zmyqyfj0VcBwQA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
-        - id: cKm1qUPQky+Y6n+6ZrtdllLA9ZRAAUzw+ag7WaSZ3ccAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+        - id: 5ayd6sK8X5pZHoDmRli+aY9zjPB250DmEq2/UdFCidoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+        - id: y/eztrpZDTcd1VKwNi63WkBLmhwUU748BOBnYZYpBDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
       endorsements:
         - any: {}
       fees: endorsing_node
       max_expiration: 3
     secrets:
       - name: TELEGRAM_BOT_TOKEN
-        value: pGJwa1gg6d39VbQtT12Vm1WOWD69xvaEKMbrNuUSFJksVtINey5kbmFtZVgiiJ/5l4ylLX5btId1WFvwX58TMLo+/GUnF3yJdNTFq5K8O2Vub25jZU93xRhBKdtqHtoiDVeAp4BldmFsdWVYPiJzhz32+NZi3et2EvQeRHOJiIcsUTsyz9akZic86y3ombL9WPHIL+M/Q2R7DchAyVbAWANHipm2y8LOxPqg
+        value: pGJwa1ggQvN23OQKndH8+fmMMVidl5TeTRzdWVQYHZDBsJhGAkxkbmFtZVgiTyo7wYpCwyTrDNY/OqRn7OWS/fJjuo1To34xLaWdQkHDk2Vub25jZU/EX9l1kYwHt1Er7Qln0RNldmFsdWVYPi+IKymGsgxFKExuE47gXz1r2RBAvft1zgr/xp3ffDqLcRKod1GVYL4qxHFUeKb5ufhOaDS3Ir2aUHucszzu
       - name: TELEGRAM_GROUP_ID
-        value: pGJwa1gg0RUiTl46h/40cn/HoggjADAwd2d423jOh1eomXx5zi9kbmFtZVghYMX79C/n6dpZxgRXo5eoJvKM+bulkbzD/LEyoIHXUts0ZW5vbmNlTz7rCfTw3burtxTK51R7AGV2YWx1ZVgbz2gc9++yWfTB4D58zJsuqg6/UJcxJrVHWSNa
+        value: pGJwa1ggqiNWLgIdIHAjLjkugLBHS2JQLut+zg/2V/OYwwAlkyBkbmFtZVghlU2MviQn76EqJmWNH97jBo69tewS3GezGck15bHQ2TBKZW5vbmNlT+mXMmnv6JaDy97ouISLzmV2YWx1ZVgbkOdUTewKiSCJmTCGsZwbuEMRBFs0vE0Zso/L
     machines:
       default:
         provider: oasis1qp2ens0hsp7gh23wajxa4hpetkdek3swyyulyrmz
         offer: playground_short
-        id: 00000000000000af
+        id: 00000000000000b0
