@@ -1,8 +1,0 @@
-services:
-    test-rofl:
-        image: "docker.io/ghoulouis/test-rofl:latest"
-        platform: linux/amd64
-        environment:
-            - IN_ROFL=TRUE
-            - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
-            - TELEGRAM_GROUP_ID=${TELEGRAM_GROUP_ID}

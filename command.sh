@@ -17,3 +17,10 @@ oasis r build --output test.orc --update-manifest  && oasis r update
 
 # step 3
 git add . && git commit -m "update test.orc" && git push 
+
+# test 
+
+docker-compose -f compose.yaml up --build   
+
+docker-compose -f compose.yaml down --rmi all -vv
+
