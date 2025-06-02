@@ -4,7 +4,7 @@ tee: tdx
 kind: container
 resources:
   memory: 8096
-  cpus: 1
+  cpus: 4
   storage:
     kind: disk-persistent
     size: 512
@@ -31,8 +31,8 @@ deployments:
           min_tcb_evaluation_data_number: 17
           tdx: {}
       enclaves:
-        - HPapLZWOqSpBS4XvrO8ZuynnDKo2yJxufQFS3/7riq4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
-        - qQOtlwSqJEETs9BJ62T7YnhAQj6IiroKDwA4ShAkBI0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+        - lLntbKZFu2TIc5ndplig1A4BiT5tKvUgki8TlXguVCoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+        - 7cv6gI19xaoYzMkZmEEWl1HayCEJO8V0qDP3hU50O70AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
       endorsements:
         - any: {}
       fees: endorsing_node
