@@ -3,11 +3,11 @@ version: 0.1.0
 tee: tdx
 kind: container
 resources:
-  memory: 8096
+  memory: 4096
   cpus: 1
   storage:
     kind: disk-persistent
-    size: 10000
+    size: 5000
 artifacts:
   firmware: https://github.com/oasisprotocol/oasis-boot/releases/download/v0.4.1/ovmf.tdx.fd#db47100a7d6a0c1f6983be224137c3f8d7cb09b63bb1c7a5ee7829d8e994a42f
   kernel: https://github.com/oasisprotocol/oasis-boot/releases/download/v0.4.1/stage1.bin#06e12cba9b2423b4dd5916f4d84bf9c043f30041ab03aa74006f46ef9c129d22
@@ -32,8 +32,8 @@ deployments:
           min_tcb_evaluation_data_number: 17
           tdx: {}
       enclaves:
-        - id: Kdqs5/oQl5XoVhf3TZ3KYInZjmNClVpI2Bd7hHodZfQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
-        - id: 1Le95otuV/XCJN4h78AKa4+Zly0OLF/QyLjNc02lSRUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+        - id: 4Q9GsFXLXZrkYSL3BjLvPpMIgdN/Zmyqyfj0VcBwQA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+        - id: cKm1qUPQky+Y6n+6ZrtdllLA9ZRAAUzw+ag7WaSZ3ccAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
       endorsements:
         - any: {}
       fees: endorsing_node
