@@ -6,5 +6,5 @@ services:
             - IN_ROFL=TRUE
             - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
             - TELEGRAM_GROUP_ID=${TELEGRAM_GROUP_ID}
-        # volumes:
-        #     - /run/rofl-appd.sock:/run/rofl-appd.sock
+        volumes:
+            - /run/rofl-appd.sock:/run/rofl-appd.sock
