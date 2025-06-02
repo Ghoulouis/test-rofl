@@ -4,7 +4,7 @@ tee: tdx
 kind: container
 resources:
   memory: 8096
-  cpus: 4
+  cpus: 1
   storage:
     kind: disk-persistent
     size: 10000
@@ -21,6 +21,7 @@ deployments:
     network: testnet
     paratime: sapphire
     admin: dev
+    oci_repository: rofl.sh/2c527c0b-8ad7-4f15-9f96-44fa81bc63f5:1748860177
     trust_root:
       height: 26823885
       hash: d7b89572db16c0ba47f51bb1fa08caa0132e37f20015bef44a81f6c5c71456a0
@@ -31,8 +32,8 @@ deployments:
           min_tcb_evaluation_data_number: 17
           tdx: {}
       enclaves:
-        - id: L1xhX6N1X6C2spqXK1A02W/6UF0TgGeRChSHy73Bh+8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
-        - id: ATrYgDhV3iCN1pbiqO+dNFklZ+t+UiJrKwbrmy7k1lAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+        - id: Kdqs5/oQl5XoVhf3TZ3KYInZjmNClVpI2Bd7hHodZfQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+        - id: 1Le95otuV/XCJN4h78AKa4+Zly0OLF/QyLjNc02lSRUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
       endorsements:
         - any: {}
       fees: endorsing_node
@@ -42,3 +43,8 @@ deployments:
         value: pGJwa1gg6d39VbQtT12Vm1WOWD69xvaEKMbrNuUSFJksVtINey5kbmFtZVgiiJ/5l4ylLX5btId1WFvwX58TMLo+/GUnF3yJdNTFq5K8O2Vub25jZU93xRhBKdtqHtoiDVeAp4BldmFsdWVYPiJzhz32+NZi3et2EvQeRHOJiIcsUTsyz9akZic86y3ombL9WPHIL+M/Q2R7DchAyVbAWANHipm2y8LOxPqg
       - name: TELEGRAM_GROUP_ID
         value: pGJwa1gg0RUiTl46h/40cn/HoggjADAwd2d423jOh1eomXx5zi9kbmFtZVghYMX79C/n6dpZxgRXo5eoJvKM+bulkbzD/LEyoIHXUts0ZW5vbmNlTz7rCfTw3burtxTK51R7AGV2YWx1ZVgbz2gc9++yWfTB4D58zJsuqg6/UJcxJrVHWSNa
+    machines:
+      default:
+        provider: oasis1qp2ens0hsp7gh23wajxa4hpetkdek3swyyulyrmz
+        offer: playground_short
+        id: 00000000000000af
