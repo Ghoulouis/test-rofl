@@ -3,5 +3,6 @@ services:
         build:
             context: .
             dockerfile: Dockerfile
+        container_name: server
         platform: linux/amd64
         image: ghoulouis/test-rofl
